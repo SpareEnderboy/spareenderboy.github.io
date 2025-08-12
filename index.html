@@ -9,12 +9,6 @@
         <meta property="og:type" content="website">
         <!--[if !IE]>-->
         <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-		<script>
-			player.ruffle().config = {
-   		 		autoplay: "auto",
-				unmuteOverlay: "visible",
-			};
-		</script>
         <!--[endif]-->
     </head>
     <body>
@@ -31,6 +25,7 @@
 				<param name="devicefont" value="false" />
 				<param name="salign" value="" />
 				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="autoplay" value="true" />
 				<!--[if !IE]>-->
 				<object type="application/x-shockwave-flash" data="construction.swf" width="640" height="360">
 					<param name="movie" value="construction.swf" />
@@ -44,6 +39,7 @@
 					<param name="devicefont" value="false" />
 					<param name="salign" value="" />
 					<param name="allowScriptAccess" value="sameDomain" />
+					<param name="autoplay" value="true" />
 				<!--<![endif]-->
 					<a href="http://www.adobe.com/go/getflash">
 						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
