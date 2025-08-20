@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My site</title>
+        <title>404 Not Found</title>
         <meta charset="utf-8">
         <meta property="og:title" content="Enderboy's Website">
-        <meta property="og:description" content="Under Contruction!">
-        <meta property="og:image" content="/img0.jpg">
+        <meta property="og:description" content="404! Not Found!">
         <meta property="og:type" content="website">
         <!--[if !IE]>-->
         <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
@@ -17,9 +16,43 @@
 				display: flex;
 				justify-content: center;
 			}
+			.good {
+				font-family: Arial, Helvetica, sans-serif;
+				text-align: center;
+			}
+			a {
+				text-decoration: none;
+			}
+			button {
+				text-align: center;
+				transition-duration: 0.5s;
+				width: auto;
+				height: 30px;
+			}
+			button:hover {
+				color:white;
+				background-color: rgb(37, 63, 63);
+				border: solid;
+				border-color: black;
+				border-radius: 5px;
+			}
+			.centered {
+				padding-bottom: 10px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: fit-content;
+			}
 		</style>
     </head>
     <body>
+		<h1 class="good">Uh-oh!</h1>
+		<p class="good">Looks like you've landed on a page that doesn't exist right now. You've been redirected to this minimal under construction page. Click the button to go back</p>
+		<div class="centered">
+			<a class="good" href="https://spareenderboy.github.io">
+				<button>Go back</button>
+			</a>
+		</div>
         <div id="flashContent">
 			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="640" height="360" id="construction" align="middle">
 				<param name="movie" value="construction.swf" />
