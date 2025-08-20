@@ -23,12 +23,45 @@
         justify-content: center;
         align-items: center;
     }
-    .centerplzandsticky {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: sticky;
-        top: 0;
+    @media screen and (min-device-width:500px) {
+        .centerplzandsticky {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+        .google {
+            padding-top: 5px;
+            padding-right: 15px;
+            min-height: 40px;
+        }
+        .marqus {
+            height: 2lvw;
+        }
+    }
+    @media screen and (max-device-width: 499px) {
+        .centerplzandsticky {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            flex-direction: column;
+        }
+        .google {
+            padding-top: 5px;
+            padding-right: 15px;
+            min-height: 100px;
+        }
+        .gInput {
+            width: 75%;
+            height: 60px;
+            font-size: x-large;
+        }
+        .marqus {
+            height: 4lvw;
+        }
     }
     .sticky {
         position: sticky;
@@ -48,10 +81,6 @@
         color:darkcyan;
         text-decoration: underline;
     }
-    .google {
-        padding-top: 5px;
-        padding-right: 15px;
-    }
         </style>
     </head>
     <body>  
@@ -63,8 +92,8 @@
                            <a href="http://www.google.com/">
                                <svg class="google" aria-label="Google" height="40" role="img" viewBox="0 0 272 92" width="auto" xmlns="http://www.w3.org/2000/svg"><path d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44zm57.74 0c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44zm55.74-20.84v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36zM225 3v65h-9.5V3h9.5zm37.02 51.48l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93zM35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z" fill="#FFF"></path></svg>
                            </a>
-                                <input type="text" name="q" size="31" maxlength="255" value="">
-                                <input type="submit" name="btnG" value="Google Search">
+                                <input class="gInput" type="text" name="q" size="31" maxlength="255" value="">
+                                <input class="gInput" type="submit" name="btnG" value="Google Search">
                             </td>
                    </tr>
                </tbody>
@@ -72,7 +101,7 @@
                     <tr>
                        <td class="yes">
                            <h1>Hello world!</h1>
-                           <marquee><img src="https://img.shields.io/github/stars/SpareEnderboy/spareenderboy.github.io"> <img src="https://img.shields.io/github/forks/SpareEnderboy/spareenderboy.github.io"> <img src="https://img.shields.io/badge/landed-true-green"> <img src="https://img.shields.io/badge/construction-on_top-yellow"></marquee>
+                           <marquee class="marqus"><img class="marqus" src="https://img.shields.io/github/stars/SpareEnderboy/spareenderboy.github.io"> <img class="marqus" src="https://img.shields.io/github/forks/SpareEnderboy/spareenderboy.github.io"> <img class="marqus" src="https://img.shields.io/badge/landed-true-green"> <img class="marqus" src="https://img.shields.io/badge/construction-on_top-yellow"></marquee>
                            <p>This is some placeholder text. Actual stuff will be written here soon.</p>
                            <h2>STFU</h2>
                            <p>My name is Walter Hartwell White. I live at 308 Negra Arroyo Lane, Albuquerque, New Mexico, 87104. This is my confession. If you're watching this tape, I'm probably dead, murdered by my brother-in-law Hank Schrader. Hank has been building a meth empire for over a year now and using me as his chemist. Shortly after my 50th birthday, Hank came to me with a rather, shocking proposition. He asked that I use my chemistry knowledge to cook methamphetamine, which he would then sell using his connections in the drug world. Connections that he made through his career with the DEA. I was... astounded, I... I always thought that Hank was a very moral man and I was... thrown, confused, but I was also particularly vulnerable at the time, something he knew and took advantage of. I was reeling from a cancer diagnosis that was poised to bankrupt my family. Hank took me on a ride along, and showed me just how much money even a small meth operation could make. And I was weak. I didn't want my family to go into financial ruin so I agreed. Every day, I think back at that moment with regret. I quickly realized that I was in way over my head, and Hank had a partner, a man named Gustavo Fring, a businessman. Hank essentially sold me into servitude to this man, and when I tried to quit, Fring threatened my family. I didn't know where to turn. Eventually, Hank and Fring had a falling out. From what I can gather, Hank was always pushing for a greater share of the business, to which Fring flatly refused to give him, and things escalated. Fring was able to arrange, uh I guess I guess you call it a "hit" on my brother-in-law, and failed, but Hank was seriously injured, and I wound up paying his medical bills which amounted to a little over $177,000. Upon recovery, Hank was bent on revenge, working with a man named Hector Salamanca, he plotted to kill Fring, and did so. In fact, the bomb that he used was built by me, and he gave me no option in it. I have often contemplated suicide, but I'm a coward. I wanted to go to the police, but I was frightened. Hank had risen in the ranks to become the head of the Albuquerque DEA, and about that time, to keep me in line, he took my children from me. For 3 months he kept them. My wife, who up until that point, had no idea of my criminal activities, was horrified to learn what I had done, why Hank had taken our children. We were scared. I was in Hell, I hated myself for what I had brought upon my family. Recently, I tried once again to quit, to end this nightmare, and in response, he gave me this. I can't take this anymore. I live in fear every day that Hank will kill me, or worse, hurt my family. I... All I could think to do was to make this video in hope that the world will finally see this man, for what he really is.</p>
