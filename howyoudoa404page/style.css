@@ -1,0 +1,154 @@
+/* Chill purple-black animated background for the entire page */
+body, section, nav, footer {
+  background: linear-gradient(135deg,
+    #0f0c29,
+    #302b63,
+    #0f0c29,
+    #24243e,
+    #0f0c29,
+    #4e4376
+  );
+  background-size: 1200% 1200%;
+  animation: chillGradient 60s ease infinite;
+  color: white;
+}
+
+@keyframes chillGradient {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 100%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 0%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Buttons hover pop-out */
+.button {
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Remove underline for buttons */
+button, button:hover, a.button, a.button:hover {
+  text-decoration: none !important;
+}
+
+/* Slide-in underline only for links with class "underlinehover" */
+.underlinehover {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+.underlinehover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.underlinehover:hover::after {
+  transform: scaleX(1);
+}
+
+/* Tooltip for forks */
+.tooltip { position: relative; display: inline-block; cursor: pointer; }
+.tooltip .tooltip-text {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1f2937;
+  color: #f9fafb;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1f2937 transparent transparent transparent;
+}
+.tooltip:hover .tooltip-text {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+/* Project card fade-in animation */
+/* Project card fade-in animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Subtle animated gradient on project cards */
+@keyframes cardGradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Project card styles */
+.project-card {
+  opacity: 0; /* hidden initially for fade-in */
+  animation: fadeInUp 0.5s ease forwards; /* only fade-in here */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* allow hover transform */
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(70,30,120,0.15), rgba(0,0,0,0.4));
+  background-size: 400% 400%;
+  animation-name: fadeInUp, cardGradientMove;
+  animation-duration: 0.5s, 30s;
+  animation-timing-function: ease, ease;
+  animation-fill-mode: forwards, forwards;
+  animation-iteration-count: 1, infinite;
+}
+
+/* Project card hover pop-out */
+.project-card:hover {
+  transform: scale(1.05); /* now works properly */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  /* gradient stays the same on hover */
+}
+
+
+/* Subtle animated gradient on project card */
+@keyframes cardGradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Sticky footer */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  margin-top: auto;
+  background-color: #1f2937;
+  text-align: center;
+  padding: 1.5rem;
+  color: #9ca3af;
+}
