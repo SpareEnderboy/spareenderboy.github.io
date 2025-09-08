@@ -53,6 +53,7 @@ body {
   /* Prevent text selection */
   user-select: none;
   -webkit-user-select: none;
+  color: white;
 }
 
 /* Top Highlight Effect */
