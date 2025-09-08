@@ -190,7 +190,7 @@ body {
         border-radius: 5px;
         border-width: 2px;
         border-color: white;
-        background: linear-gradient(to bottom, #9ad1fc 0%, #73b9e7 15%, #138ee0 50%, #0d75bb 60%, #1484cf 90%, #1991e0 100%);
+        background: linear-gradient(to bottom, #9ad1fc95 0%, #73b9e795 15%, #138ee095 50%, #0d75bb95 60%, #1484cf95 90%, #1991e095 100%);
         max-width: 75%;
         color: white;
     }
