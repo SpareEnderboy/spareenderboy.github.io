@@ -11,19 +11,19 @@ body {
     }
     button {
 		color:white;
-		background-color: rgb(37, 63, 63);
+		background: linear-gradient(to bottom, #9ad1fc 0%, #73b9e7 15%, #138ee0 50%, #0d75bb 60%, #1484cf 90%, #1991e0 100%);
 		border: solid;
-		border-color: black;
-		border-radius: 5px;
+		border-color: white;
+		border-radius: 2px;
         transition-duration: 0.5s;
         font-size: 16px;
 	}
     button:hover {
 		color:white;
-		background-color: rgb(37, 63, 63);
+		background: linear-gradient(to bottom, #9ad1fc 0%, #73b9e7 15%, #138ee0 50%, #0d75bb 60%, #1484cf 90%, #1991e0 100%);
 		border: solid;
-		border-color: black;
-		border-radius: 5px;
+		border-color: white;
+		border-radius: 2px;
         box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
         font-size: 20px;
 	}
