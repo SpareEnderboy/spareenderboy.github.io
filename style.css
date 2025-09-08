@@ -2,6 +2,9 @@ body {
         background-image: url('/img0.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
+        align-content: center;
+        justify-content: center;
     }
     a:link {
         text-decoration: none;
