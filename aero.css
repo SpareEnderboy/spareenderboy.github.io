@@ -1,7 +1,26 @@
+@media screen and (min-device-width:701px) {
+    body {
+        background-size: cover;
+    }
+}
+@media screen and (min-device-width:700px) {
+    body {
+        background-size: 200lvw;
+    }
+}
+@media screen and (min-device-width:520px) {
+    body {
+        background-size: 250lvw;
+    }
+}
+@media screen and (max-device-width:346px) {
+    body {
+        background-size: 350lvw;
+    }
+}
 body {
         background-image: url('/img36.jpg');
         background-repeat: no-repeat;
-        background-size: cover;
         display: flex;
         align-content: center;
         justify-content: center;
