@@ -3,12 +3,12 @@
         background-size: cover;
     }
 }
-@media screen and (min-device-width:700px) {
+@media screen and (max-device-width:700px) {
     body {
         background-size: 200lvw;
     }
 }
-@media screen and (min-device-width:520px) {
+@media screen and (max-device-width:520px) {
     body {
         background-size: 250lvw;
     }
