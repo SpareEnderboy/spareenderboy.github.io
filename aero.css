@@ -94,6 +94,7 @@ body {
         border-radius: 5px;
         border-width: 2px;
         border-color: white;
+        background-color: gray;
         background: linear-gradient(to bottom, #9ad1fc 0%, #73b9e7 15%, #138ee0 50%, #0d75bb 60%, #1484cf 90%, #1991e0 100%);
         max-width: 75%;
         color: white;
