@@ -181,7 +181,7 @@ body {
     .sticky {
         position: sticky;
         top: 0;
-        background-color: rgb(37, 63, 63);
+        background-image: url(obs_bkg.png);
     }
     .makeitfancy {
         border-style: solid;
