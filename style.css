@@ -95,10 +95,9 @@ body {
         border-radius: 10px;
         border-width: 5px;
         border-color: black;
-        background-color: rgb(37, 63, 63);
+        background-color: rgba(37, 63, 63, 0.95);
         max-width: 75%;
         color: white;
-        opacity: 95%;
     }
     a {
         color:darkcyan;
